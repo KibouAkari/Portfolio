@@ -12,6 +12,12 @@ module.exports = {
       colors: {
         primary: "#6366F1", // Violett
       },
+      transform: {
+        "style-3d": "preserve-3d",
+      },
+      perspective: {
+        1000: "1000px",
+      },
     },
   },
   plugins: [],

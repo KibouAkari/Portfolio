@@ -20,8 +20,8 @@ export default function Home() {
               src="/kibouakari.png"
               alt="Kibou"
               className="w-full h-full object-cover"
-              initial={{ y: -10 }}
-              animate={{ y: [0, -20, 0] }}
+              initial={{ y: 0 }}
+              animate={{ y: [0, -40, 0] }}
               transition={{
                 duration: 8,
                 repeat: Infinity,
