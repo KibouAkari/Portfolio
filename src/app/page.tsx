@@ -9,17 +9,26 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+      <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 md:py-32">
         <div className="max-w-7xl w-full flex flex-col md:flex-row items-center md:items-start justify-center gap-10 flex-wrap">
           {/* Image */}
-          <motion.img
-            src="/kibouakari.png"
-            alt="Kibou"
-            className="w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full object-cover shadow-lg"
-            initial={{ y: -10 }}
-            animate={{ y: [0, -20, 0] }}
-            transition={{ duration: 4, repeat: Infinity }}
-          />
+          <motion.div
+            layoutId="profile-pic"
+            className="w-64 h-64 rounded-full shadow-lg overflow-visible mt-8"
+          >
+            <motion.img
+              src="/kibouakari.png"
+              alt="Kibou"
+              className="w-full h-full object-cover"
+              initial={{ y: -10 }}
+              animate={{ y: [0, -20, 0] }}
+              transition={{
+                duration: 8,
+                repeat: Infinity,
+                ease: [0.42, 0, 0.58, 1], // smoother easeInOut cubic bezier
+              }}
+            />
+          </motion.div>
 
           {/* Text */}
           <div className="text-center md:text-left space-y-4">
@@ -33,7 +42,7 @@ export default function Home() {
               Creative Mind
             </p>
 
-            <a href="#about" >
+            <a href="/about">
               <button className="mt-4 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-full text-white font-semibold text-sm sm:text-base transition">
                 Learn More
               </button>
