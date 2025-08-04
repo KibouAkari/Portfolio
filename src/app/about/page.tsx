@@ -6,7 +6,7 @@ export default function AboutPage() {
       <div className="w-full max-w-4xl text-center space-y-10">
         {/* Headline */}
         <h1 className="!text-5xl !sm:text-6xl !font-extrabold !tracking-tight !text-white">
-          Hey, I'm Kibou
+          Hey, I&apos;m Kibou
         </h1>
         <p className="!text-xl !text-gray-300 !max-w-2xl !mx-auto">
           <br />

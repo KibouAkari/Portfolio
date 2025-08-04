@@ -4,10 +4,10 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 py-20 bg-[var(--background)] text-[var(--foreground)] overflow-hidden">
       <div className="w-full max-w-xl text-center space-y-8">
-        <h1 className="!text-5xl !font-bold">Let's Talk</h1>
+        <h1 className="!text-5xl !font-bold">Let&apos;s Talk</h1>
         <p className="text-gray-400 text-lg">
-          Whether it's a job opportunity, a collaboration, or just a quick hello
-          — I'm always open to chat. You can reach me via the form below or
+          Whether it&apos;s a job opportunity, a collaboration, or just a quick hello
+          — I&apos;m always open to chat. You can reach me via the form below or
           directly at{" "}
           <a
             href="mailto:kibouakari@proton.me"
